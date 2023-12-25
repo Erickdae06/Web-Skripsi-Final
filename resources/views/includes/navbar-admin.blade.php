@@ -1,7 +1,7 @@
-<nav class="topnav navbar navbar-expand shadow justify-content-between justify-content-sm-start navbar-dark bg-dark border-bottom border-success border-3"
+<nav class="topnav navbar navbar-expand shadow justify-content-between justify-content-sm-start navbar-dark bg-success"
     id="sidenavAccordion">
     <!-- Sidenav Toggle Button-->
-    <button class="btn btn-icon btn-outline-dark order-1 order-lg-0 me-2 ms-lg-2 me-lg-0" id="sidebarToggle">
+    <button class="btn btn-icon btn-outline-light order-1 order-lg-0 me-2 ms-lg-2 me-lg-0" id="sidebarToggle">
         <i data-feather="menu"></i>
     </button>
     <!-- Navbar Brand-->
@@ -29,19 +29,18 @@
                 href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
                 @if (Auth::user()->profile != null)
-                    <img class="img-fluid" src="{{ Storage::url(Auth::user()->profile) }}" />
+                <img class="img-fluid" src="{{ Storage::url(Auth::user()->profile) }}" />
                 @else
-                    <img class="img-fluid" src="https://ui-avatars.com/api/?name={{ Auth::user()->name }}" />
+                <img class="img-fluid" src="https://ui-avatars.com/api/?name={{ Auth::user()->name }}" />
                 @endif
             </a>
             <div class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up"
                 aria-labelledby="navbarDropdownUserImage">
                 <h6 class="dropdown-header d-flex align-items-center">
                     @if (Auth::user()->profile != null)
-                        <img class="dropdown-user-img" src="{{ Storage::url(Auth::user()->profile) }}" />
+                    <img class="dropdown-user-img" src="{{ Storage::url(Auth::user()->profile) }}" />
                     @else
-                        <img class="dropdown-user-img"
-                            src="https://ui-avatars.com/api/?name={{ Auth::user()->name }}" />
+                    <img class="dropdown-user-img" src="https://ui-avatars.com/api/?name={{ Auth::user()->name }}" />
                     @endif
 
                     <div class="dropdown-user-details">
@@ -50,7 +49,8 @@
                     </div>
                 </h6>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item {{ (request()->is('admin/setting*')) ? 'active' : '' }}" href="{{ route('setting.index') }}">
+                <a class="dropdown-item {{ (request()->is('admin/setting*')) ? 'active' : '' }}"
+                    href="{{ route('setting.index') }}">
                     <div class="dropdown-item-icon"><i data-feather="settings"></i></div>
                     Account
                 </a>

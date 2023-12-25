@@ -1,4 +1,4 @@
-<nav class="sidenav shadow-right sidenav-dark text-light border-end border-3 border-success">
+<nav class="sidenav shadow-right sidenav-light text-dark">
     <div class="sidenav-menu">
         <div class="nav accordion" id="accordionSidenav">
             <!-- Sidenav Menu Heading (Account)-->
@@ -21,29 +21,35 @@
             <!-- Sidenav Menu Heading (Core)-->
             <div class="sidenav-menu-heading">Menu</div>
             <!-- Sidenav Link (Dashboard)-->
-            <a class="nav-link {{ (request()->is('admin/dashboard')) ? 'active' : '' }}" href="{{ route('admin-dashboard') }}">
+            <a class="nav-link {{ (request()->is('admin/dashboard')) ? 'active' : '' }}"
+                href="{{ route('admin-dashboard') }}">
                 <div class="nav-link-icon"><i data-feather="activity"></i></div>
                 Dashboard
             </a>
-            <a class="nav-link {{ (request()->is('admin/department*')) ? 'active' : '' }}" href="{{ route('department.index') }}">
+            <a class="nav-link {{ (request()->is('admin/department*')) ? 'active' : '' }}"
+                href="{{ route('department.index') }}">
                 <div class="nav-link-icon"><i data-feather="home"></i></div>
                 Data Departemen
             </a>
 
 
-            <a class="nav-link {{ (request()->is('admin/sender*')) ? 'active' : '' }}" href="{{ route('sender.index') }}">
+            <a class="nav-link {{ (request()->is('admin/sender*')) ? 'active' : '' }}"
+                href="{{ route('sender.index') }}">
                 <div class="nav-link-icon"><i data-feather="users"></i></div>
                 Pengirim Surat
             </a>
-            <a class="nav-link {{ (request()->is('admin/letter/create')) ? 'active' : '' }}" href="{{ route('letter.create') }}">
+            <a class="nav-link {{ (request()->is('admin/letter/create')) ? 'active' : '' }}"
+                href="{{ route('letter.create') }}">
                 <div class="nav-link-icon"><i data-feather="mail"></i></div>
                 Tambah Surat
             </a>
-            <a class="nav-link {{ (request()->is('admin/letter/surat-masuk')) ? 'active' : '' }}" href="{{ route('surat-masuk') }}">
+            <a class="nav-link {{ (request()->is('admin/letter/surat-masuk')) ? 'active' : '' }}"
+                href="{{ route('surat-masuk') }}">
                 <div class="nav-link-icon"><i data-feather="arrow-right"></i></div>
                 Surat Masuk
             </a>
-            <a class="nav-link {{ (request()->is('admin/letter/surat-keluar')) ? 'active' : '' }}" href="{{ route('surat-keluar') }}">
+            <a class="nav-link {{ (request()->is('admin/letter/surat-keluar')) ? 'active' : '' }}"
+                href="{{ route('surat-keluar') }}">
                 <div class="nav-link-icon"><i data-feather="arrow-left"></i></div>
                 Surat Keluar
             </a>
@@ -51,14 +57,15 @@
                 <div class="nav-link-icon"><i data-feather="user"></i></div>
                 Data User
             </a>
-            <a class="nav-link {{ (request()->is('admin/setting*')) ? 'active' : '' }}" href="{{ route('setting.index') }}">
+            <a class="nav-link {{ (request()->is('admin/setting*')) ? 'active' : '' }}"
+                href="{{ route('setting.index') }}">
                 <div class="nav-link-icon"><i data-feather="settings"></i></div>
                 Profile
             </a>
         </div>
     </div>
     <!-- Sidenav Footer-->
-    <div class="sidenav-footer border-top border-3 border-success">
+    <div class="sidenav-footer border-top border-3 border-dark">
         <div class="sidenav-footer-content">
             <div class="sidenav-footer-subtitle">Logged in as:</div>
             <div class="sidenav-footer-title">{{ Auth::user()->name }}</div>

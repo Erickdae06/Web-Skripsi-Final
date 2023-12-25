@@ -1,4 +1,4 @@
-<footer class="footer-admin mt-auto footer-dark bg-dark text-light border-top border-2 border-success">
+<footer class="footer-admin mt-auto footer-dark bg-success text-light border-top border-2 border-success">
     <div class="container-xl px-4">
         <div class="row">
             <div class="col-md-6 small">Copyright &copy; Erick Dae {{ date('Y') }}</div>
