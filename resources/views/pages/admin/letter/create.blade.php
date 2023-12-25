@@ -6,7 +6,7 @@
 
 @section('container')
     <main>
-        <header class="page-header page-header-compact page-header-dark bg-dark mb-4 border-bottom border-3 border-success mb-4">
+        <header class="page-header page-header-compact page-header-dark bg-primary mb-4  mb-4">
             <div class="container-fluid px-4">
                 <div class="page-header-content">
                     <div class="row align-items-center justify-content-between pt-3">
@@ -37,8 +37,8 @@
                 <div class="row gx-4">
                     <div class="col-lg-9">
                         <div class="card mb-4">
-                            <div class="card-header border-3 border-success border bg-dark bg-gradient text-success">Form Surat</div>
-                            <div class="card-body border-success border-3 border bg-dark text-light">
+                            <div class="card-header bg-light bg-gradient text-success">Form Surat</div>
+                            <div class="card-body  bg-light text-dark">
                                 <div class="mb-3 row">
                                     <label for="letter_type" class="col-sm-3 col-form-label">Jenis Surat</label>
                                     <div class="col-sm-9">
@@ -149,7 +149,7 @@
                                 <div class="mb-3 row">
                                     <label for="letter_file" class="col-sm-3 col-form-label"></label>
                                     <div class="col-sm-9">
-                                        <button type="submit" class="btn btn-outline-success text-light">Simpan</button>
+                                        <button type="submit" class="btn btn-success text-light">Simpan</button>
                                     </div>
                                 </div>
                             </div>
