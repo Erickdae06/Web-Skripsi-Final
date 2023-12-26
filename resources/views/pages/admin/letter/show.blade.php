@@ -73,7 +73,7 @@ Detail Surat
             </div>
             <div class="col-lg-5">
                 <div class="card mb-4 ">
-                    <div class="card-header bg-light bg-gradient text-dark">
+                    <div class="card-header bg-light bg-gradient text-success">
                         File Surat -
                         <a href="{{ route('download-surat', $item->id) }}" class="btn btn-sm btn-success text-light">
                             <i class="fa fa-download" aria-hidden="true"></i> &nbsp; Download Surat
