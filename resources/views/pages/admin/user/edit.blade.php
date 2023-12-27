@@ -6,7 +6,7 @@
 
 @section('container')
     <main>
-        <header class="page-header page-header-compact page-header-light border-bottom bg-white mb-4">
+        <header class="page-header page-header-compact page-header-dark bg-primary mb-4">
             <div class="container-xl px-4">
                 <div class="page-header-content">
                     <div class="row align-items-center justify-content-between pt-3">
@@ -32,7 +32,7 @@
                 <div class="col-xl-12">
                     <!-- Account details card-->
                     <div class="card mb-4">
-                        <div class="card-header">Informasi Akun</div>
+                        <div class="card-header text-success">Informasi Akun</div>
                         <div class="card-body">
                             @if ($errors->any())
                                 <div class="alert alert-danger alert-dismissible fade show" role="alert">

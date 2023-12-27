@@ -6,7 +6,7 @@
 
 @section('container')
     <main>
-        <header class="page-header page-header-compact page-header-dark border-bottom bg-dark border-success mb-4">
+        <header class="page-header page-header-compact page-header-dark bg-primary mb-4">
             <div class="container-xl px-4">
                 <div class="page-header-content">
                     <div class="row align-items-center justify-content-between pt-3">
@@ -31,9 +31,9 @@
             <div class="row">
                 <div class="col-xl-12">
                     <!-- Account details card-->
-                    <div class="card mb-4 border-success border-3 bg-dark">
-                        <div class="card-header border-bottom border-2 border-success bg-dark bg-gradient text-success">Informasi Akun</div>
-                        <div class="card-body text-light">
+                    <div class="card mb-4 bg-light">
+                        <div class="card-header bg-light bg-gradient text-success">Informasi Akun</div>
+                        <div class="card-body text-dark">
                             @if ($errors->any())
                                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
                                     <ul>
@@ -84,7 +84,7 @@
                                     </div>   
                                 </div>
                                 <!-- Submit button-->
-                                <button class="btn btn-outline-success" type="submit">
+                                <button class="btn btn-success" type="submit">
                                     Tambah Pengguna Baru
                                 </button>
                             </form>
